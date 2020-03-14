@@ -3,18 +3,24 @@ package com.kelidon;
 public class Song {
 
     private final long id;
-    private final String response;
+    private final String name;
+    private final String author;
 
-    public Song(long id, String response) {
+    public Song(long id, String name, String author) {
         this.id = id;
-        this.response = response;
+        this.name = name;
+        this.author = author;
     }
 
     public long getId() {
         return id;
     }
 
-    public String getResponse() {
-        return response;
+    public String getName() {
+        return name;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 }
